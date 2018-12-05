@@ -4,7 +4,7 @@ library(dplyr)
 library(maps)
 library(usmap)
 
-stateTemp <- read.csv("GlobalLandTemperaturesByState.csv");
+stateTemp <- read.csv("data/GlobalLandTemperaturesByState.csv");
 stateTemp <- stateTemp %>% 
   filter(Country == "United States", State != "HI", State != "AK", as.POSIXct(dt) > as.POSIXct("1850-1-1")) %>%
   mutate(year = format(as.Date(dt), "%Y"))
