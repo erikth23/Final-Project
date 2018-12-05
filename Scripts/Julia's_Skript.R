@@ -3,6 +3,7 @@ library(dplyr)
 
 setwd("~/Desktop/INFO201/ProjectFinal201/Final-Project/Scripts")
 
-source(file = "server_Raphael.R")
+source(file = "server_Julia.R")
 
-generate_scatter_plot("Los Angeles")
+temperaturebycountry_plot("France")
+
