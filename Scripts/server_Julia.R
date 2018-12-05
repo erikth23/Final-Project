@@ -37,14 +37,12 @@ shinyServer(function(input, output){
   
 })
 
-Output$text <- renderText({
+generateCountryText <- function(){
   paste("This graph is showing average temperatures of each decade in countries around the world in the period of 1850-2010. 
         Based on the plotted data, it is clear that begining with Industrial revolution temperatures in all countries have become higher, 
         with considerable increase in the past decade in only certain countries. This could also point to other atributes that contribute to such 
         a difference in temperatures and questions as to why some countries experience global warming more than others.
-        The bar graph of each country is unique, and its data can tell a story beyong climate change. "
-    
- )
+        The bar graph of each country is unique, and its data can tell a story beyong climate change.")
   
-})
+}
 

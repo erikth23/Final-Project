@@ -28,4 +28,8 @@ shinyServer(function(input, output) {
   output$state_plot <- renderPlot({
     getStateTemp(input$date)
   })
+  
+  output$country_text <- renderText({
+    generateCountryText()
+  })
 })

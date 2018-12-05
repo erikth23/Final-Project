@@ -34,7 +34,8 @@ my.ui <- navbarPage(
                            )
                ),
              mainPanel(
-               plotOutput("country_plot")
+               plotOutput("country_plot"),
+               textOutput("country_text")
              )
            )
   ),

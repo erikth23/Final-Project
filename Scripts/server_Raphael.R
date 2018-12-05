@@ -29,6 +29,17 @@ generate_scatter_plot <- function(city_selected) {
 
 }
 
+generateCityText <- function(){
+  paste("My graph shows the average temperature of every decade based on January 1st. 
+          As you can see on any major city, there has been a trend of worsening average land temperatures.
+        In other words, cold places get colder, warm places get warmer, which causes unusually harsher seasons and climate.
+        On a global spectrum, this is not normal.
+        For example, Los Angeles hit an all-time low average temperature on January 1, 1950 of 6.5 degrees Celsius, but this has increased 
+        since cars became a commodity and the end of the Great Depression in the US. As of January 1, 2010, the average temperature of Los Angeles is 10 degrees Celsius.
+        Los Angeles is supposed to have a cool winter, but since it's naturally warmer, it has gotten warmer due to climate change, thus a warmer winter. 
+        On the other hand, Chicago and New York usually have cold winters, and they have been getting colder winters since the 1950 as well.")
+}
+
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
    
