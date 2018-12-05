@@ -5,5 +5,5 @@ setwd("~/Desktop/INFO201/ProjectFinal201/Final-Project/Scripts")
 
 source(file = "server_Julia.R")
 
-temperaturebycountry_plot("France")
+temperaturebycountry_plot("Canada")
 
