@@ -6,7 +6,7 @@ library(ggplot2)
 library(dplyr)
 
 # Load Global Temeprature By Major Cities data 
-global_cities <- read.csv(file = "GlobalLandTemperaturesByMajorCity.csv", sep = ",", stringsAsFactors = FALSE)
+global_cities <- read.csv(file = "data/GlobalLandTemperaturesByMajorCity.csv", sep = ",", stringsAsFactors = FALSE)
 
 # Create a point plot function 
 generate_scatter_plot <- function(city_selected) {
