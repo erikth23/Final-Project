@@ -7,9 +7,6 @@ library(ggplot2)
 
 #Preparing files:
 
-getwd()
-setwd("~/Desktop/INFO201/ProjectFinal201")
-
 data <- read.csv("data/GlobalLandTemperaturesByCountry.csv", sep = ",", stringsAsFactors = FALSE)
 
 country_average_temperature_plot <- function(country_selected) {
