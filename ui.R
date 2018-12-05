@@ -47,7 +47,8 @@ my.ui <- navbarPage(
                          step = 10)
            ),
            mainPanel(
-             plotOutput("state_plot")
+             plotOutput("state_plot"),
+             textOutput("state_text")
            )
   )
 )

@@ -19,3 +19,13 @@ getStateTemp <- function(date) {
     scale_fill_gradient(limits=c(-10, 25), low="white", high="blue") + 
     theme(legend.position = "right")
 }
+
+generateStateText <- function() {
+  paste("The map here shows the average temperature in each state of the United States relative to each other.
+        You are able to use the slider to go through each decade and see the change across the timeline. As 
+        you can see there is an increase in the average temperature as you go from 1850 to 2010, indicating 
+        a change in climate and providing evidence for global warming.  The reason for this increase is most
+        likely due to the industrial revolution which started in 1850.  This would've produced green house
+        gasses that depleted the o-zone layer and thus providing for solar radiation hitting the earth and 
+        an increase in temperature.")
+}

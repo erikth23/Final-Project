@@ -32,4 +32,8 @@ shinyServer(function(input, output) {
   output$country_text <- renderText({
     generateCountryText()
   })
+  
+  output$state_text <- renderText({
+    generateStateText()
+  })
 })
