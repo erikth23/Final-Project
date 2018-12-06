@@ -16,8 +16,9 @@ getStateTemp <- function(date) {
   stateTemp <- summarise(group_by(stateTemp, State), mean(AverageTemperature))
   colnames(stateTemp) <- c("state", "AverageTemperature")
   plot_usmap(data = stateTemp, values = "AverageTemperature", lines = "red") +
-    scale_fill_gradient(limits=c(-10, 25), low="white", high="blue") + 
-    theme(legend.position = "right")
+    scale_fill_gradient(name="Average Temperature (Celsius)",limits=c(-10, 25), low="white", high="blue") + 
+    theme(legend.position = "right") +
+    ggtitle(paste("Average Temperature United States"), date)
 }
 
 generateStateText <- function() {

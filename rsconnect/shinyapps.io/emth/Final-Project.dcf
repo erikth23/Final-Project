@@ -1,0 +1,12 @@
+name: Final-Project
+title: Final-Project
+username:
+account: emth
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 605408
+bundleId: 1743905
+url: https://emth.shinyapps.io/Final-Project/
+when: 1544046724.74282
+asMultiple: FALSE
+asStatic: FALSE

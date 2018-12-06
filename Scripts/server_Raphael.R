@@ -6,12 +6,11 @@ library(ggplot2)
 library(dplyr)
 
 # Load Global Temeprature By Major Cities data 
-global_cities <- read.csv(file = "data/GlobalLandTemperaturesByMajorCity.csv", sep = ",", stringsAsFactors = FALSE)
-
+global_city <- read.csv(file = "data/GlobalLandTemperaturesByMajorCity.csv", sep = ",", stringsAsFactors = FALSE)
 # Create a point plot function 
 generate_scatter_plot <- function(city_selected) {
   # Filter major cities data based on user-selected city
-  major_cities <- filter(global_cities, City == city_selected) 
+  major_cities <- filter(global_city, City == city_selected) 
   # Filter by decade
   major_cities <- filter(major_cities, dt %in% c("1850-01-01", "1860-01-01", "1870-01-01", "1880-01-01",
                                                  "1890-01-01", "1990-01-01", "1910-01-01", "1920-01-01",

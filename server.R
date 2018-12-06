@@ -3,26 +3,23 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 
-setwd("~/Desktop/INFO_201/Final-Project")
-source("scripts/server_Raphael.R")
-source("scripts/server_Erik.R")
-source("scripts/server_Julia.R")
+
+source("./Scripts/server_Erik.R")
+source("./Scripts/server_Julia.R")
+source("./Scripts/server_Raphael.R")
+source("./Scripts/server_Alex.R")
 
 shinyServer(function(input, output) {
-  output$major_city_plot <- renderPlot({
-    generate_scatter_plot(input$city)
-  })
-  
-  output$home <-renderText({
-    paste("Welcome")
-  })
-  
   output$city_text <- renderText({
     generateCityText()
   })
   
   output$country_plot <- renderPlot({
     temperaturebycountry_plot(input$country)
+  })
+  
+  output$major_city_plot <- renderPlot({
+    generate_scatter_plot(input$city)
   })
   
   output$state_plot <- renderPlot({
@@ -35,5 +32,13 @@ shinyServer(function(input, output) {
   
   output$state_text <- renderText({
     generateStateText()
+  })
+  
+  output$global_plot <- renderPlot({
+    global_temp_plot(input$global)
+  })
+  
+  output$global_text <- renderText({
+    generateGlobalText()
   })
 })
